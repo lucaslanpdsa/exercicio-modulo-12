@@ -1,0 +1,30 @@
+.hero {
+  width: 100%;
+  position: relative;
+  opacity: 75%;
+
+  &__bg {
+    background-image: radial-gradient(farthest-side at 73% 21%, transparent, rgb(26, 29, 41));
+    position: absolute;
+    inset: 0px;
+  }
+
+  &__bg-image {
+    max-width: 100%;
+  }
+
+  &__titulo {
+    width: 100%;
+    z-index: 20;
+    position: absolute;
+    top: 70%;
+
+    &__img {
+      max-width: 341px;
+      min-width: 100px;
+      width: 35vw;
+      margin-left: 5.6vw;
+    }
+
+  }
+}

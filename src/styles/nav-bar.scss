@@ -1,0 +1,52 @@
+@use 'variaveis';
+
+.navbar--none {
+  opacity: 0;
+  transition: opacity .5s linear;
+}
+
+.navbar__btn .navbar--none {
+  opacity: 0;
+  transition: opacity .5s linear;
+}
+
+//o btn ja tem o display flex e isso sobrescreve o display none, por isso adicionei o ".navbar__btn" para dar mas peso na cascata
+
+
+.bg {
+  background-color: variaveis.$corDeFundo;
+}
+
+.cabecalho {
+  width: 100%;
+  padding: 10px 35px;
+  position: fixed;
+  align-items: center;
+  z-index: 2;
+}
+
+.navbar {
+  position: sticky;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    cursor: pointer;
+    width: 64px;
+
+    img {
+      width: 64px;
+    }
+  }
+
+  .navbar__btn {
+    align-items: center;
+    display: flex;
+
+    &--assine {
+      margin-right: 10px;
+    }
+  }
+}

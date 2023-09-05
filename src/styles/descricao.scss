@@ -1,0 +1,26 @@
+.descricao {
+  padding: 5.6vw;
+
+  &__dados {
+    &__img {
+      max-width: 20px;
+    }
+  }
+
+  &__titulo {
+    text-align: start;
+    border-bottom: 1px solid gray;
+    color: gray;
+    margin: 20px 0;
+  }
+
+  &__titulo-secundario {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  &__img {
+    width: 20px;
+    height: 20px;
+  }
+}
